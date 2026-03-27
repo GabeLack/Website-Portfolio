@@ -1,3 +1,6 @@
+# Just to keep my self instructions private
+MY_README.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -121,12 +124,32 @@ celerybeat.pid
 
 # Environments
 .env
+.env.*
+*.env
 .venv
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Django local data
+Portfolio/db.sqlite3
+Portfolio/media/
+
+# Django collected static files (if used)
+Portfolio/staticfiles/
+
+# Type checker / linter caches
+.ruff_cache/
+
+# IDE/editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
 
 # Spyder project settings
 .spyderproject
