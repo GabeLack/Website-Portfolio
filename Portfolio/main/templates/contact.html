@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Contact Page
+{% endblock title %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock extrahead %}
+
+{% block content %}
+<div class="contact-container">
+    <h2>Get in Touch</h2>
+    <p>Feel free to connect with me on social media or send me an email:</p>
+    
+    <div class="contact-links">
+        <a href="https://www.linkedin.com/in/gabriellackgren/" target="_blank" class="contact-link linkedin">LinkedIn</a>
+        <a href="https://github.com/GabeLack/" target="_blank" class="contact-link github">GitHub</a>
+        <a href="mailto:gabriel.lackgren@gmail.com" class="contact-link email">Email</a>
+    </div>
+</div>
+{% endblock content %}

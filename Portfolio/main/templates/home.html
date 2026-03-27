@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Home Page
+{% endblock title %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock extrahead %}
+
+{% block content %}
+<div class="about-section">
+    <h1>About Me</h1>
+    <p>
+        Welcome to my portfolio! This is where you can learn more about me and explore my projects.
+    </p>
+    <p>
+        Since you've already made it here through my formal CV, I'll just tell you 
+        that I'm just gonna be using this website to ramble fairly informally about
+        myself. Easier to show humanity when I don't have to worry about seeming
+        professional or restricting the word count.
+    </p>
+    <p>
+        The types of projects on this website will cover two types, all considered
+        completed, things I'm currently working on won't be present.
+        So one of the types is a programming project, likely in my field of AI/ML
+        (this website being the exception into web development), and the other
+        type is a non-programming project, like my two creative hobbies of D&D and sculpting.
+    </p>
+    <p>
+        My programming projects will have brief descriptions of the project and
+        then links to the github repo, and my non-programming projects will just
+        have descriptions and photos.
+    </p>
+    <p>
+        My d&d projects will be present as one project (however it does have what
+        could be considered as internal sub-projects that I won't show cause that
+        could be spoilers to any potential players), as my personal setting
+        (typical high fantasy to make using the preset books easier). My sculpting
+        projects are either with physical clay materials, or the more recently learned
+        digital sculpting, which is done in Blender (want to upgrade to zbrush in
+        the future, but it's expensive...).
+    </p>
+    <p>
+        So yeah, that's my informal rambling about myself, hope you enjoy the projects
+        I have here!
+    </p>
+</div>
+{% endblock content %}
