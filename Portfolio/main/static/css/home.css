@@ -1,21 +1,56 @@
-/* About section */
+/* About container and section */
+.about-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
 .about-section {
-  background-color: white;
-  padding: 30px;
-  margin-bottom: 30px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  max-width: 70ch;
+  margin: 0 auto;
+  padding: clamp(26px, 5vw, 50px) clamp(20px, 5vw, 46px);
+  border-radius: 14px;
+  border: 1px solid #dbe7f2;
+  box-shadow: 0 14px 35px rgba(13, 38, 76, 0.08);
 }
 
 .about-section h1 {
-  color: #007bff;
-  margin-bottom: 20px;
+  color: #1d2b3a;
+  margin-bottom: 14px;
+  font-size: clamp(1.85rem, 2.8vw, 2.35rem);
+  text-align: left;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
 }
 
 .about-section p {
-  margin-bottom: 15px;
-  line-height: 1.8;
-  color: #333;
+  max-width: 66ch;
+  margin-bottom: 18px;
+  line-height: 1.82;
+  color: #33485f;
+  font-size: clamp(1rem, 1.15vw, 1.08rem);
+  text-align: left;
+  text-wrap: pretty;
+}
+
+.about-section .about-lead {
+  color: #22364a;
+  font-size: clamp(1.08rem, 1.5vw, 1.22rem);
+  line-height: 1.72;
+  margin-bottom: 30px;
+}
+
+.about-section .about-lead::after {
+  content: "";
+  display: block;
+  width: 84px;
+  height: 3px;
+  margin-top: 18px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #0f6cc9 0%, #3b98e0 100%);
 }
 
 /* Filters section */
@@ -75,6 +110,29 @@
 
 /* Responsive design */
 @media (max-width: 768px) {
+  .about-container {
+    width: 100%;
+    padding: 30px 14px;
+  }
+
+  .about-section {
+    padding: 28px 18px;
+    border-radius: 10px;
+  }
+
+  .about-section h1 {
+    font-size: 1.75rem;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+    line-height: 1.74;
+  }
+
+  .about-section .about-lead {
+    font-size: 1.08rem;
+  }
+
   .tags-list {
     flex-direction: column;
   }
